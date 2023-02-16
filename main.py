@@ -63,6 +63,8 @@ if __name__ == '__main__':
     if not connector.check_tables():
         print('TASK 1: Create 5 tables as per .png')
         connector.create_tables()
+        if connector.check_tables():
+            print('Successfully created.\n')
 
     if not check_population(connector, population):
         print('TASK 3: Populate DB with "data/population.json"')
