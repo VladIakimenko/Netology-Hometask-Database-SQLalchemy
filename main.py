@@ -65,7 +65,7 @@ if __name__ == '__main__':
         connector.create_tables()
 
     if not check_population(connector, population):
-        'TASK 3: Populate DB with tests.data.json'
+        print('TASK 3: Populate DB with "data/population.json"')
         populate(connector, population)
 
 
